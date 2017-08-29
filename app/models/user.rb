@@ -11,6 +11,6 @@ class User < ApplicationRecord
   before_validation :set_name, on: :create
 
   def set_name
-    self.name = "Товарищ №#{rand(777)}" if self.name.blank?
+    self.name = "Пользователь №#{rand(777)}" if self.name.blank?
   end
 end
