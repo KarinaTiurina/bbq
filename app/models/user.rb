@@ -11,7 +11,7 @@ class User < ApplicationRecord
   before_validation :set_name, on: :create
 
   after_commit :link_subscriptions, on: :create
-  
+
   private
 
   def set_name
