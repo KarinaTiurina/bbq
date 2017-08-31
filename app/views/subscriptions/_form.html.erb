@@ -12,10 +12,8 @@
           <%= f.text_field :user_email, class: 'form-control' %>
         </div>
     <% end %>
-
-    <% unless own_event?(@event) %>
-      <div class="actions">
-        <%= f.submit 'Подписаться', class: 'btn btn-primary' %>
-      </div>
-    <% end %>
+    
+    <div class="actions">
+      <%= f.submit 'Подписаться', class: 'btn btn-primary' %>
+    </div>
 <% end %>
