@@ -15,6 +15,12 @@ ru:
         address: 'Место проведения'
         datetime: 'Дата и время'
         description: 'Описание'
+      subscription:
+        user_name: 'Имя'
+        user_email: 'Email'
+      comment:
+        body: 'Комментарий'
+        user_name: 'Имя'
 
   controllers:
     events:
@@ -44,7 +50,7 @@ ru:
   subscriptions:
     subscription:
       destroy_confirm: 'Вы уверены, что хотите удалить эту подписку?'
-      email_error: 'Данный email уже занят'
+      email_error: 'уже зарезервирован'
 
   are_you_sure: 'Вы уверены?'
 
