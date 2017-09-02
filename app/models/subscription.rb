@@ -38,7 +38,7 @@ class Subscription < ApplicationRecord
   def user_is_author
     if user.present?
       if event.user == user
-        errors.add(:user, I18n.t('controllers.subscriptions.author_error'))
+        errors.add(:user, :invalid)
       end
     end
   end
