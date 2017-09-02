@@ -13,6 +13,8 @@ class Subscription < ApplicationRecord
 
   validates :user_email, uniqueness: {scope: :event_id}, unless: 'user.present?'
 
+  validate :user_is_author
+
   def user_name
     if user.present?
       user.name
@@ -31,5 +33,13 @@ class Subscription < ApplicationRecord
 
   def emails
     User.all.map(&:email)
+  end
+
+  def user_is_author
+    if user.present?
+      if event.user == user
+        errors.add(:user, I18n.t('controllers.subscriptions.author_error'))
+      end
+    end
   end
 end
