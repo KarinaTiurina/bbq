@@ -3,6 +3,9 @@ ru:
     models:
       user: 'Пользователь'
       event: 'Событие'
+      photo: 'Фотография'
+      subscription: 'Подписка'
+      comment: 'Комментарий'
 
     attributes:
       user:
@@ -23,6 +26,8 @@ ru:
       comment:
         body: 'Комментарий'
         user_name: 'Имя'
+      photo:
+        photo: 'Фотография'
 
   controllers:
     events:
