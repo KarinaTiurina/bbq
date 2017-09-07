@@ -27,7 +27,7 @@ ru:
         body: 'Комментарий'
         user_name: 'Имя'
       photo:
-        photo: 'Фотография'
+        photo: 'Файл'
 
   controllers:
     events:
