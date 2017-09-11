@@ -46,3 +46,5 @@ gem 'carrierwave'
 gem 'rmagick'
 
 gem 'fog-aws'
+
+gem 'lightbox-bootstrap-rails', '5.1.0.1'
