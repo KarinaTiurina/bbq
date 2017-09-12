@@ -15,7 +15,7 @@
 //= require twitter/bootstrap
 //= require turbolinks
 //= require map
-//= require lightbox-bootstrap
+//= require lightbox
 //= require_tree .
 
 $(document).on('click', '[data-toggle="lightbox"]', function(event) {

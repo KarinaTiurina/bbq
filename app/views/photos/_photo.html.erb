@@ -1,4 +1,4 @@
-<div class="event-photo buffer-both">
+
   <% image_title = "Добавил #{render partial: 'users/user', object: photo.user}" %>
 
   <% if current_user_can_edit?(photo) %>
@@ -9,7 +9,10 @@
       %>
   <% end %>
 
-  <%= link_to image_tag(photo.photo.thumb.url), photo.photo.url, data: {
-      toggle: 'lightbox', title: image_title, gallery: 'event-photos'
-  } %>
-</div>
+  <span class="event-photo">
+    <%= link_to image_tag(photo.photo.thumb.url), photo.photo.url, data: {
+        toggle: 'lightbox', title: image_title, gallery: 'event-photos'
+    } %>
+  </span>
+
+
