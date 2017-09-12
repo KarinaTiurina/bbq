@@ -1,5 +1,4 @@
 class EventsController < ApplicationController
-  skip_before_action :verify_authenticity_token
   before_action :authenticate_user!, except: [:show, :index]
   before_action :set_event, only: [:show]
   before_action :set_current_user_event, only: [:edit, :update, :destroy]
