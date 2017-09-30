@@ -1,24 +1,14 @@
-# README
+# Приложение Шашлыки
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Учебное приложение. Пользователи приложения могут создавать события и звать на них друзей. Также события можно комментировать, подписываться на них, добавлять фотографии.
 
-Things you may want to cover:
+Приложение написано с помощью `rails 5.1.3`.
 
-* Ruby version
+Для запуска:
 
-* System dependencies
+    bundle exec rails db:migrate
+    bundle exec rails s
+    
+В ходе работы на приложением был изучен фреймворк Bootstrap (`gem 'twitter-bootstrap-rails'`), `gem 'devise'` для аутентификации пользователей, `gem 'carrierwave'` для загрузки фотографий, `gem 'fog-aws'` для работы с amazon. Также была реализована работа с почтой.
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Посмотреть приложение можно [здесь](https://best-events.herokuapp.com/).
